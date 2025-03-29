@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+.epilogue,*{
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,header{
+    background-color: hsl(0, 0%, 98%);
+}
+
+header{
+    display: flex;
+    padding: 15px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 1rem;
+}
+
+.logo{
+    width: 120px;
+    margin-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #878787;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+}
+
+.loginbtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+.loginbtn:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.registerbtn{
+    background: none;
+    color: hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.registerbtn:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content{
+    width: 700px;
+    margin-right: 200px;
+    padding-top: 150px;
+}
+
+.remote-work{
+    font-size: 6rem;
+}
+
+.desc-div{
+    width: 550px;
+}
+
+.desc{
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 41%);
+    margin-top: 50px;
+}
+
+.btn{
+    width: 180px;
+    height: 60px;
+    font-size: 1.2rem;
+    background-color: hsl(0, 0%, 8%);
+    color: #ffff;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.brands-div{
+    margin-top: 140px;
+}
+
+.client-img{
+    margin-left: 50px;
+}
+
+.forsize{
+    width: 100px;
+}
+
+.main-img{
+    width: 600px;
+}
+
+.featuresdiv{
+    position: absolute;
+    width: 170px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    aspect-ratio: 1/1.1;
+    left: 0;
+    margin-left: 130px;
+    margin-top: 50px;
+    border: 1px solid hsla(0, 0%, 51%, 0.113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.companydiv{
+    position: absolute;
+    width: 150px;
+    background-color: #ffffff;
+    border: 1px solid hsla(0, 0%, 51%, 0.113);
+    border-radius: 15px;
+    aspect-ratio: 1/1.1;
+    left: 0;
+    margin-left: 330px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.companyul{
+    gap: 20px;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.featuresul{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featuresSpan{
+    margin-left: 10px;
+}
+
+.menuicon{
+    display: none;
+}
+
+
+@media screen and (max-width: 1550px){
+    .remote-work{
+        font-size: 5rem;
+    }
+
+    .desc{
+        font-size: 1.3rem;
+    }
+
+    .btn{
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .forsize{
+        width: 80px;
+    }
+
+    .main-img{
+        width: 550px;
+    }
+
+    .content{
+        width: 600px;
+        margin-right: 100px;
+        padding-top: 100px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1200px){
+    .remote-work{
+        font-size: 2.4rem;
+    }
+
+    .desc{
+        font-size: 1rem;
+    }
+
+    .forsize{
+        width: 60px;
+    }
+
+    .btn{
+        width: 130px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .main-img{
+        width: 400px;
+    }
+
+    .content{
+        width: 500px;
+        margin-right: 80px;
+        padding-top: 100px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content{
+        order: 2;
+        margin-left: 70px;
+    }
+
+    .image{
+        order: 1;
+    }
+
+    ul{
+        font-size: 0.8rem;
+        gap: 30px;
+    }
+    nav{
+        margin-left: 30px;
+    }
+    
+    .buttons{
+        margin-right: 30px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    nav{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+
+    .menuicon{
+        display: block;
+        margin-right: 20px;
+        margin-top: 18px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .desc{
+        font-size: 0.7rem;
+    }
+
+    .content{        
+        text-align: center;
+    }
+    .main-img{
+        width: 300px;
+    }
+
+    .desc-div{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .forsize{
+        width: 50px;
+    }
+}

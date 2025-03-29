@@ -301,24 +301,40 @@ a:hover{
         position: absolute;
         right: 0;
     }
-    
-    .desc{
-        font-size: 0.7rem;
+
+    .desc-div{
+        width: 60%;
+        margin: 0 auto;
     }
 
-    .content{        
-        text-align: center;
+}
+
+@media screen and (max-width: 490px){
+    .forsize{
+        width: 40px;
     }
+
     .main-img{
         width: 300px;
     }
 
-    .desc-div{
-        width: 300px;
-        margin: 0 auto;
+    .remote-work{
+        font-size: 2rem;
     }
 
-    .forsize{
-        width: 50px;
+    .btn{
+        width: 120px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .client-img{
+        margin-left: 20px;
+    }
+
+    .content {
+        
+        padding-top: 50px;
+        width: 90%;
     }
 }

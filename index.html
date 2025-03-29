@@ -16,11 +16,11 @@
       <img class="logo" src="./images/logo.svg" alt="">
       <nav>
         <ul>
-          <li><a href="#">Features</a><img src="./images/icon-arrow-down.svg" alt=""></li>
-          <li><a href="#">Company</a><img src="./images/icon-arrow-down.svg" alt=""></li>
+          <li id="featuresid"><a href="#">Features</a><img src="./images/icon-arrow-down.svg" alt=""></li>
+          <li id="companyID"><a href="#">Company</a><img src="./images/icon-arrow-down.svg" alt=""></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
-              <div class="featuresdiv">
+              <div id="featuresDivID" class="featuresdiv">
                 <ul class="featuresul">
                   <li><a href="#"><img src="./images/icon-todo.svg" alt=""> <span class="featuresSpan">Todo List</span></a></li>
                   <li><a href="#"><img src="./images/icon-calendar.svg" alt=""> <span class="featuresSpan">Calendar</span></a></li>
@@ -28,7 +28,7 @@
                   <li><a href="#"><img src="./images/icon-planning.svg" alt=""> <span class="featuresSpan">Planning</span></a></li>
                 </ul>
               </div>
-              <div class="companydiv">
+              <div id="companyDivID" class="companydiv">
                 <ul class="companyul">
                   <li><a href="#">History</a></li>
                   <li><a href="#">Our Team</a></li>
@@ -68,11 +68,48 @@
       </div>
       <div class="image">
          <img class="main-img" src="./images/image-hero-desktop.png" alt="">
+         <img class="main-img-mobile" src="./images/image-hero-mobile.png" alt="">
     </div>
+    </div>
+
+    <div class="menudiv">
+      <div class="close-icon-div">
+        <img id="menuIcon" class="closemenu-icon" src="./images/icon-close-menu.svg" alt="">
+      </div>
+
+      <div class="menu">
+        <ul class="menuul">
+          <li id="menufeatures"><a href="#">Features</a><img src="./images/icon-arrow-down.svg" alt=""></li>
+            
+              <ul id="menufeaturesul" class="featuresul">
+                <li><a href="#"><img src="./images/icon-todo.svg" alt=""> <span class="featuresSpan">Todo List</span></a></li>
+                <li><a href="#"><img src="./images/icon-calendar.svg" alt=""> <span class="featuresSpan">Calendar</span></a></li>
+                <li><a href="#"><img src="./images/icon-reminders.svg" alt=""> <span class="featuresSpan">Reminder</span></a></li>
+                <li><a href="#"><img src="./images/icon-planning.svg" alt=""> <span class="featuresSpan">Planning</span></a></li>
+              </ul>
+            
+
+          <li id="menucompany"><a href="#">Company</a><img src="./images/icon-arrow-down.svg" alt=""></li>
+
+           
+              <ul id="menucompanyul" class="companyul">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            
+
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="buttons-menu">
+          <button class="loginbtn">Login</button>
+          <button class="registerbtnmenu">Register</button>
+        </div>
     </div>
 
   </main>
   
-  <script src="script.js"></script>
+  <script src="./dist/script.js"></script>
 </body>
 </html>
